@@ -2,7 +2,7 @@
  * Interleaves bits of two int16s (binary magic method).
  * @param {number} x first int16
  * @param {number} y second int16
- * @returns {number}
+ * @returns {number} int32
  */
 function interleave(x, y) {
   x = (x | (x<<8)) & 0x00FF00FF;

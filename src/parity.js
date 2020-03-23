@@ -14,7 +14,7 @@ function parity1(x) {
 /**
  * Gets n-bit parity.
  * @param {number} x an int32
- * @param {number} n number of bits (1)
+ * @param {number?} n number of bits (1)
  * @returns {number}
  */
 function parity(x, n=1) {

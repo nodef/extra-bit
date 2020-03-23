@@ -3,7 +3,8 @@
  * @param {number} x an int32
  * @param {number} i first bit index
  * @param {number} j second bit index
- * @param {number} n bit width (1)
+ * @param {number?} n bit width (1)
+ * @returns {number}
  */
 function swap(x, i, j, n=1) {
   var x = ((x>>>i)^(x>>>j)) & ((1<<n)-1);
