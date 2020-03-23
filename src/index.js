@@ -1,0 +1,11 @@
+exports.count = require('./count');
+exports.get = require('./get');
+exports.interleave = require('./interleave');
+exports.merge = require('./merge');
+exports.parity = require('./parity');
+exports.reverse = require('./reverse');
+exports.scan = require('./scan');
+exports.setAs = require('./setAs');
+exports.set = require('./set');
+exports.signExtend = require('./signExtend');
+exports.swap = require('./swap');
