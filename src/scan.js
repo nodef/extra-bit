@@ -4,7 +4,7 @@ const MOD37_POS32 = [
 ];
 
 /**
- * Gets index of first set bit from left (mod37 method).
+ * Gets index of first set bit from LSB (mod37 method).
  * @param {number} x an int32
  * @returns {number}
  */

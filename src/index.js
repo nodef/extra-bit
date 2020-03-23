@@ -5,6 +5,7 @@ exports.merge = require('./merge');
 exports.parity = require('./parity');
 exports.reverse = require('./reverse');
 exports.scan = require('./scan');
+exports.scanReverse = require('./scanReverse');
 exports.setAs = require('./setAs');
 exports.set = require('./set');
 exports.signExtend = require('./signExtend');
