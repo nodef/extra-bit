@@ -1,0 +1,23 @@
+{
+  "name": "extra-bit",
+  "version": "0.0.1",
+  "description": "The bit is a basic unit of information in information theory, computing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/extra-bit.git"
+  },
+  "keywords": [
+    "extra",
+    "bit"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodef/extra-bit/issues"
+  },
+  "homepage": "https://github.com/nodef/extra-bit#readme"
+}
