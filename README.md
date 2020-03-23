@@ -49,18 +49,18 @@ bit.signExtend(15, 4);
 
 > Browserified, minified version of this package is [extra-bit.min].
 
-[get]: https://github.com/nodef/extra-array/wiki/get
-[set]: https://github.com/nodef/extra-array/wiki/set
-[setAs]: https://github.com/nodef/extra-array/wiki/setAs
-[swap]: https://github.com/nodef/extra-array/wiki/swap
-[scan]: https://github.com/nodef/extra-array/wiki/scan
-[scanReverse]: https://github.com/nodef/extra-array/wiki/scanReverse
-[count]: https://github.com/nodef/extra-array/wiki/count
-[parity]: https://github.com/nodef/extra-array/wiki/parity
-[reverse]: https://github.com/nodef/extra-array/wiki/reverse
-[merge]: https://github.com/nodef/extra-array/wiki/merge
-[interleave]: https://github.com/nodef/extra-array/wiki/interleave
-[signExtend]: https://github.com/nodef/extra-array/wiki/signExtend
+[get]: https://github.com/nodef/extra-bit/wiki/get
+[set]: https://github.com/nodef/extra-bit/wiki/set
+[setAs]: https://github.com/nodef/extra-bit/wiki/setAs
+[swap]: https://github.com/nodef/extra-bit/wiki/swap
+[scan]: https://github.com/nodef/extra-bit/wiki/scan
+[scanReverse]: https://github.com/nodef/extra-bit/wiki/scanReverse
+[count]: https://github.com/nodef/extra-bit/wiki/count
+[parity]: https://github.com/nodef/extra-bit/wiki/parity
+[reverse]: https://github.com/nodef/extra-bit/wiki/reverse
+[merge]: https://github.com/nodef/extra-bit/wiki/merge
+[interleave]: https://github.com/nodef/extra-bit/wiki/interleave
+[signExtend]: https://github.com/nodef/extra-bit/wiki/signExtend
 
 [bit]: https://en.wikipedia.org/wiki/Bit
 [browserify]: https://www.npmjs.com/package/browserify
