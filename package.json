@@ -1,6 +1,6 @@
 {
   "name": "extra-bit",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "The bit is a basic unit of information in information theory, computing.",
   "main": "index.js",
   "scripts": {
@@ -31,5 +31,10 @@
   "bugs": {
     "url": "https://github.com/nodef/extra-bit/issues"
   },
-  "homepage": "https://github.com/nodef/extra-bit#readme"
+  "homepage": "https://github.com/nodef/extra-bit#readme",
+  "devDependencies": {
+    "find-npm-prefix": "^1.0.2",
+    "recast": "^0.18.7",
+    "tempy": "^0.5.0"
+  }
 }
