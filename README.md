@@ -5,7 +5,7 @@ Sean Eron Anderson and many others.
 Each method is also available as separate package for use by bundling tools,
 like [browserify], [rollup], [uglify-js].
 
-> Stability: Stable.
+> Stability: Experimental.
 
 ```javascript
 const bit = require('extra-bit');
