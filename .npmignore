@@ -1,0 +1,12 @@
+# scripts
+src/
+
+# build
+build.js
+bundle.js
+.travis.yml
+
+# others
+unused/
+unused.js
+TODO
