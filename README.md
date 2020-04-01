@@ -1,9 +1,9 @@
 The [bit] is a basic unit of information in information theory, computing.
-This package includes a number of very interesting bit twiddling hacks by
-Sean Eron Anderson and many others.
 
-Each method is also available as separate package for use by bundling tools,
-like [browserify], [rollup], [uglify-js].
+This package includes a number of very interesting bit twiddling hacks by
+Sean Eron Anderson and many others. Each method is also available as
+separate package for use by bundling tools, like [browserify], [rollup],
+[uglify-js].
 
 > Stability: Experimental.
 
