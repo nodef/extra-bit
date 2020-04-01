@@ -44,11 +44,6 @@ function interleave(x, y) {
 function merge(x, y, m) {
   return x ^ ((x^y) & m);
 }
-/**
- * Gets 1-bit parity (parallel method).
- * @param {number} x an int32
- * @returns {number}
- */
 function parity1(x) {
   x ^= x>>>16;
   x ^= x>>>8;
