@@ -49,6 +49,11 @@ bit.signExtend(15, 4);
 
 > Browserified, minified version of this package is [extra-bit.min].
 
+[bit]: https://en.wikipedia.org/wiki/Bit
+[browserify]: https://www.npmjs.com/package/browserify
+[rollup]: https://www.npmjs.com/package/rollup
+[uglify-js]: https://www.npmjs.com/package/uglify-js
+[extra-bit.min]: https://www.npmjs.com/package/extra-bit.min
 [get]: https://github.com/nodef/extra-bit/wiki/get
 [set]: https://github.com/nodef/extra-bit/wiki/set
 [setAs]: https://github.com/nodef/extra-bit/wiki/setAs
@@ -61,9 +66,3 @@ bit.signExtend(15, 4);
 [merge]: https://github.com/nodef/extra-bit/wiki/merge
 [interleave]: https://github.com/nodef/extra-bit/wiki/interleave
 [signExtend]: https://github.com/nodef/extra-bit/wiki/signExtend
-
-[bit]: https://en.wikipedia.org/wiki/Bit
-[browserify]: https://www.npmjs.com/package/browserify
-[rollup]: https://www.npmjs.com/package/rollup
-[uglify-js]: https://www.npmjs.com/package/uglify-js
-[extra-bit.min]: https://www.npmjs.com/package/extra-bit.min
