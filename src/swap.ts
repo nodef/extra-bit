@@ -1,5 +1,5 @@
 /**
- * Swaps bit sequences (xor method).
+ * Swaps bit sequences.
  * @param x an int32
  * @param i first bit index
  * @param j second bit index

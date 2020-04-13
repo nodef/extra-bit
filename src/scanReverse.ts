@@ -1,7 +1,7 @@
 import DEBRUIJN_POS32 from './_DEBRUIJN_POS32';
 
 /**
- * Gets index of first set bit from MSB (DeBruijn method).
+ * Gets index of first set bit from MSB.
  * @param x an int32
  */
 function scanReverse(x: number): number {
