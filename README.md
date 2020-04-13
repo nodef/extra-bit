@@ -30,17 +30,17 @@ bit.signExtend(15, 4);
 
 | Method                | Action
 |-----------------------|-------
-| [get]                 | Gets a bit (right-shift method).
-| [set]                 | Sets a bit (left-shift method).
-| [setAs]               | Sets bits as per mask (not method).
-| [swap]                | Swaps bit sequences (xor method).
-| [scan]                | Gets index of first set bit from LSB (mod37 method).
-| [scanReverse]         | Gets index of first set bit from MSB (DeBruijn method).
-| [count]               | Counts bits set (parallel method).
+| [get]                 | Gets a bit.
+| [set]                 | Sets a bit.
+| [setAs]               | Sets bits as per mask.
+| [swap]                | Swaps bit sequences.
+| [scan]                | Gets index of first set bit from LSB.
+| [scanReverse]         | Gets index of first set bit from MSB.
+| [count]               | Counts bits set.
 | [parity]              | Gets n-bit parity.
-| [reverse]             | Reverses all bits (parallel method).
-| [merge]               | Merges bits as per mask (xor method).
-| [interleave]          | Interleaves bits of two int16s (binary magic method).
+| [reverse]             | Reverses all bits.
+| [merge]               | Merges bits as per mask.
+| [interleave]          | Interleaves bits of two int16s.
 | [signExtend]          | Sign extends variable bit-width integer.
 
 <br>
@@ -67,6 +67,6 @@ bit.signExtend(15, 4);
 [interleave]: https://github.com/nodef/extra-bit/wiki/interleave
 [signExtend]: https://github.com/nodef/extra-bit/wiki/signExtend
 [:running:]: https://npm.runkit.com/extra-bit
-[:vhs:]: https://asciinema.org/a/319566
 [:package:]: https://www.npmjs.com/package/extra-bit
 [:moon:]: https://www.npmjs.com/package/extra-bit.min
+[:vhs:]: https://asciinema.org/a/319605
