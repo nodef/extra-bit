@@ -1,11 +1,15 @@
 {
   "name": "extra-bit",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "The bit is a basic unit of information in information theory, computing.",
   "main": "index.js",
   "scripts": {
+    "einit": "ebuild init",
+    "eupdate": "ebuild update",
+    "escatter": "ebuild scatter",
     "test": "exit"
   },
+  "runkitExampleFilename": "example.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodef/extra-bit.git"
