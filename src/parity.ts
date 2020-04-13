@@ -1,4 +1,4 @@
-function parity1(x) {
+function parity1(x: number): number {
   x ^= x>>>16;
   x ^= x>>>8;
   x ^= x>>>4;
@@ -8,11 +8,10 @@ function parity1(x) {
 
 /**
  * Gets n-bit parity.
- * @param {number} x an int32
- * @param {number?} n number of bits (1)
- * @returns {number}
+ * @param x an int32
+ * @param n number of bits (1)
  */
-function parity(x, n=1) {
+function parity(x: number, n: number=1): number {
   if(n===1) return parity1(x);
   var m = (1<<n)-1, a = 0|0;
   while(x) {
@@ -21,4 +20,4 @@ function parity(x, n=1) {
   }
   return a;
 }
-module.exports = parity;
+export default parity;

@@ -1,0 +1,9 @@
+/**
+ * Gets a bit (right-shift method).
+ * @param x an int32
+ * @param i bit index
+ */
+function get(x: number, i: number): number {
+  return (x>>>i) & 1;
+}
+export default get;

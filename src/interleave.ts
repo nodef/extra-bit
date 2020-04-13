@@ -1,10 +1,10 @@
 /**
  * Interleaves bits of two int16s (binary magic method).
- * @param {number} x first int16
- * @param {number} y second int16
- * @returns {number} int32
+ * @param x first int16
+ * @param y second int16
+ * @returns int32
  */
-function interleave(x, y) {
+function interleave(x: number, y: number): number {
   x = (x | (x<<8)) & 0x00FF00FF;
   x = (x | (x<<4)) & 0x0F0F0F0F;
   x = (x | (x<<2)) & 0x33333333;
@@ -15,4 +15,4 @@ function interleave(x, y) {
   y = (y | (y<<1)) & 0x55555555;
   return y | (x<<1);
 }
-module.exports = interleave;
+export default interleave;
