@@ -6,7 +6,7 @@
  * @param n bit width (1)
  */
 function swap(x: number, i: number, j: number, n: number=1): number {
-  var x = ((x>>>i)^(x>>>j)) & ((1<<n)-1);
-  return x ^ ((x<<i)|(x<<j));
+  var t = ((x>>>i)^(x>>>j)) & ((1<<n)-1);
+  return x ^ ((t<<i)|(t<<j));
 }
 export default swap;
