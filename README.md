@@ -69,4 +69,4 @@ bit.signExtend(15, 4);
 [:running:]: https://npm.runkit.com/extra-bit
 [:package:]: https://www.npmjs.com/package/extra-bit
 [:moon:]: https://www.npmjs.com/package/extra-bit.min
-[:vhs:]: https://asciinema.org/a/319605
+[:vhs:]: https://asciinema.org/a/319613
