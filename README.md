@@ -1,9 +1,11 @@
 The [bit] is a basic unit of information in information theory, computing. [:running:] [:vhs:] [:package:] [:moon:]
 
 This package includes a number of very interesting bit twiddling hacks by
-Sean Eron Anderson and many others. Each method is also available as
-separate package for use by bundling tools, like [browserify], [rollup],
-[uglify-js].
+Sean Eron Anderson and many others.
+
+Methods as separate packages:
+- `@extra-bit/swap`: use [rollup] to bundle this es module.
+- `@extra-bit/swap.min`: use in browser ([browserify], [uglify-js]).
 
 > Stability: Experimental.
 
@@ -47,13 +49,10 @@ bit.signExtend(15, 4);
 
 [![nodef](https://merferry.glitch.me/card/extra-bit.svg)](https://nodef.github.io)
 
-> Browserified, minified version of this package is [extra-bit.min].
-
 [bit]: https://en.wikipedia.org/wiki/Bit
 [browserify]: https://www.npmjs.com/package/browserify
 [rollup]: https://www.npmjs.com/package/rollup
 [uglify-js]: https://www.npmjs.com/package/uglify-js
-[extra-bit.min]: https://www.npmjs.com/package/extra-bit.min
 [get]: https://github.com/nodef/extra-bit/wiki/get
 [set]: https://github.com/nodef/extra-bit/wiki/set
 [setAs]: https://github.com/nodef/extra-bit/wiki/setAs
