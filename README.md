@@ -1,16 +1,18 @@
 The [bit] is a basic unit of information in information theory, computing. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
 
-This package includes a number of very interesting bit twiddling hacks by
-Sean Eron Anderson and many others.
-
 Methods as separate packages:
 - `@extra-bit/swap`: use [rollup] to bundle this es module.
 - `@extra-bit/swap.min`: use in browser ([browserify], [uglify-js]).
+
+This package includes a number of very interesting bit twiddling hacks by
+Sean Eron Anderson and many others.
 
 > Stability: Experimental.
 
 ```javascript
 const bit = require('extra-bit');
+// import * as bit from 'extra-bit';
+// import * as bit from 'https://unpkg.com/extra-bit@1.0.26/index.mjs'; (deno)
 
 bit.count(7);
 // 3 (111 => 3)
