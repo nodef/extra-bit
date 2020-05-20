@@ -1,10 +1,11 @@
 {
   "name": "extra-bit",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "The bit is a basic unit of information in information theory, computing.",
   "main": "index.js",
   "scripts": {
     "einit": "ebuild init",
+    "ecode": "ebuild update --docs false",
     "eupdate": "ebuild update",
     "escatter": "ebuild scatter",
     "test": "exit"
