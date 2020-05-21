@@ -1,8 +1,13 @@
 {
   "name": "extra-bit",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "The bit is a basic unit of information in information theory, computing.",
   "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.mjs"
+  },
   "scripts": {
     "einit": "ebuild init",
     "ecode": "ebuild update --docs false",
