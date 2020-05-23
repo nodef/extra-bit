@@ -1,11 +1,10 @@
-The [bit] is a basic unit of information in information theory, computing. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
+The [bit] is a basic unit of information in information theory, computing. [:running:] [:package:] [:moon:] [:ledger:]
 
 Methods as separate packages:
 - `@extra-bit/swap`: use [rollup] to bundle this es module.
 - `@extra-bit/swap.min`: use in browser ([browserify], [uglify-js]).
 
-This package includes a number of very interesting bit twiddling hacks by
-Sean Eron Anderson and many others.
+This package includes [bit twiddling hacks] by Sean Eron Anderson and many others.
 
 > Stability: Experimental.
 
@@ -52,6 +51,7 @@ bit.signExtend(15, 4);
 [![nodef](https://merferry.glitch.me/card/extra-bit.svg)](https://nodef.github.io)
 
 [bit]: https://en.wikipedia.org/wiki/Bit
+[bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
 [browserify]: https://www.npmjs.com/package/browserify
 [rollup]: https://www.npmjs.com/package/rollup
 [uglify-js]: https://www.npmjs.com/package/uglify-js
