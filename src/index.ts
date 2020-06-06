@@ -11,3 +11,4 @@ export {default as set} from './set';
 export {default as setAs} from './setAs';
 export {default as signExtend} from './signExtend';
 export {default as swap} from './swap';
+export {default as toggle} from './toggle';
