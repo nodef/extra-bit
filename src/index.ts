@@ -4,6 +4,7 @@ export {default as interleave} from './interleave';
 export {default as merge} from './merge';
 export {default as parity} from './parity';
 export {default as reverse} from './reverse';
+export {default as rotate} from './rotate';
 export {default as scan} from './scan';
 export {default as scanReverse} from './scanReverse';
 export {default as set} from './set';
