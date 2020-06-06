@@ -1,6 +1,6 @@
 {
   "name": "extra-bit",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "description": "The bit is a basic unit of information in information theory, computing.",
   "main": "index.js",
   "module": "index.mjs",
