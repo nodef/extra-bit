@@ -10,6 +10,9 @@ OTHERS
 - split
 - reduce
 
+
+https://www.npmjs.com/package/uupaa.bit.js
+
 // count the number of contiguous 1 bits from Left-side or Right-side
 Bit.cnl(0b11001110) // -> 2
 Bit.cnr(0b11001110) // -> 3
