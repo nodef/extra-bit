@@ -1,0 +1,28 @@
+STRINGIFY
+
+
+OTHERS
+- slice / getPart(x, i, n)
+- deinterleave
+- split
+- reduce
+
+// count the number of contiguous 1 bits from Left-side or Right-side
+Bit.cnl(0b11001110) // -> 2
+Bit.cnr(0b11001110) // -> 3
+ 
+// Number(Count) of Leading Zero
+Bit.nlz(0x6)    // -> 29
+Bit.clz(0x6)    // -> 29 (this function is an alias of Bit.nlz)
+ 
+// Number(Count) of Training Zero
+Bit.ntz(0x6)    // -> 1
+Bit.ctz(0x6)    // -> 1 (this function is an alias of Bit.ntz)
+ 
+// binary dump
+Bit.dump(0x12345678, [4,4,8,4,4,8]);
+// -> "0001, 0010, 00110100, 0101, 0110, 01111000"
+ 
+// verbose dump
+Bit.dump(0x12345678, bitPattern, true);
+// -> "00010010001101000101011001111000(0x12345678), 0001(1,0x1), 0010(2,0x2), 00110100(52,0x34), 0101(5,0x5), 0110(6,0x6), 01111000(120,0x78)"
