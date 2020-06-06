@@ -1,5 +1,6 @@
 export {default as count} from './count';
 export {default as get} from './get';
+export {default as getAs} from './getAs';
 export {default as interleave} from './interleave';
 export {default as merge} from './merge';
 export {default as parity} from './parity';
