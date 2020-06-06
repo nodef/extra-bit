@@ -1,11 +1,10 @@
 /**
  * Sign extends variable bit-width integer.
  * @param x variable bit-width integer
- * @param n bit width
- * @returns int32
+ * @param w bit width (32)
  */
-function signExtend(x: number, n: number): number {
-  n = 32-n;
-  return (x<<n)>>n;
+function signExtend(x: number, w: number=32): number {
+  w = 32-w;
+  return (x<<w)>>w;
 }
 export default signExtend;
