@@ -1,4 +1,4 @@
-The [bit] is a basic unit of information in information theory, computing. [:running:] [:package:] [:moon:] [:ledger:]
+The [bit] is a basic unit of information in information theory, computing. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
 
 Methods as separate packages:
 - `@extra-bit/swap`: use [rollup] to bundle this es module.
@@ -38,7 +38,6 @@ bit.signExtend(15, 4);
 | [toggle]              | Toggles a bit.
 | [swap]                | Swaps bit sequences.
 | [scan]                | Gets index of first set bit from LSB.
-| [scanReverse]         | Gets index of first set bit from MSB.
 | [count]               | Counts bits set.
 | [parity]              | Gets n-bit parity.
 | [rotate]              | Rotates bits.
@@ -73,5 +72,5 @@ bit.signExtend(15, 4);
 [:running:]: https://npm.runkit.com/extra-bit
 [:package:]: https://www.npmjs.com/package/extra-bit
 [:moon:]: https://www.npmjs.com/package/extra-bit.min
-[:vhs:]: https://asciinema.org/a/319613
 [:ledger:]: https://unpkg.com/extra-bit/
+[:vhs:]: https://asciinema.org/a/337114
