@@ -2,6 +2,9 @@ STRINGIFY
 
 
 OTHERS
+- fromInt64
+- fromDouble
+- fromSingle
 - slice / getPart(x, i, n)
 - deinterleave
 - split
