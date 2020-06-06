@@ -23,7 +23,7 @@ bit.swap(6, 1, 0);
 // 5 (110 => 101)
 
 bit.reverse(0xFFFF0000);
-// 65535 (0xFFFF0000 => 0x0000FFFF)
+// 65535 (0x0000FFFF)
 
 bit.signExtend(15, 4);
 // -1
@@ -35,12 +35,13 @@ bit.signExtend(15, 4);
 |-----------------------|-------
 | [get]                 | Gets a bit.
 | [set]                 | Sets a bit.
-| [setAs]               | Sets bits as per mask.
+| [toggle]              | Toggles a bit.
 | [swap]                | Swaps bit sequences.
 | [scan]                | Gets index of first set bit from LSB.
 | [scanReverse]         | Gets index of first set bit from MSB.
 | [count]               | Counts bits set.
 | [parity]              | Gets n-bit parity.
+| [rotate]              | Rotates bits.
 | [reverse]             | Reverses all bits.
 | [merge]               | Merges bits as per mask.
 | [interleave]          | Interleaves bits of two int16s.
@@ -67,6 +68,8 @@ bit.signExtend(15, 4);
 [merge]: https://github.com/nodef/extra-bit/wiki/merge
 [interleave]: https://github.com/nodef/extra-bit/wiki/interleave
 [signExtend]: https://github.com/nodef/extra-bit/wiki/signExtend
+[toggle]: https://github.com/nodef/extra-bit/wiki/toggle
+[rotate]: https://github.com/nodef/extra-bit/wiki/rotate
 [:running:]: https://npm.runkit.com/extra-bit
 [:package:]: https://www.npmjs.com/package/extra-bit
 [:moon:]: https://www.npmjs.com/package/extra-bit.min
