@@ -3,7 +3,7 @@ This package includes [bit twiddling hacks] by Sean Eron Anderson and many other
 :package: [NPM](https://www.npmjs.com/package/extra-bit),
 :smiley_cat: [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-bit),
 :running: [RunKit](https://npm.runkit.com/extra-bit),
-:vhs: [Asciinema](undefined),
+:vhs: [Asciinema](https://asciinema.org/a/337114),
 :moon: [Minified](https://www.npmjs.com/package/extra-bit.min),
 :scroll: [Files](https://unpkg.com/extra-bit/),
 :newspaper: [JSDoc](https://nodef.github.io/extra-bit/),
