@@ -1,12 +1,9 @@
-The [bit] is a basic unit of information in information theory, computing. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
-
-Methods as separate packages:
-- `@extra-bit/swap`: use [rollup] to bundle this es module.
-- `@extra-bit/swap.min`: use in browser ([browserify], [uglify-js]).
-
+The [bit] is a basic unit of information in information theory, computing.
 This package includes [bit twiddling hacks] by Sean Eron Anderson and many others.
 
 > Stability: Experimental.
+
+<br>
 
 ```javascript
 const bit = require("extra-bit");
@@ -29,7 +26,11 @@ bit.signExtend(15, 4);
 // -1
 ```
 
-### reference
+<br>
+<br>
+
+
+## Index
 
 | Method                | Action
 |-----------------------|-------
@@ -46,6 +47,7 @@ bit.signExtend(15, 4);
 | [interleave]          | Interleaves bits of two int16s.
 | [signExtend]          | Sign extends variable bit-width integer.
 
+<br>
 <br>
 
 [![](https://img.youtube.com/vi/4Yy0pPTrHlk/maxresdefault.jpg)](https://www.youtube.com/watch?v=4Yy0pPTrHlk)
