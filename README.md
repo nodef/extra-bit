@@ -48,7 +48,7 @@ bit.signExtend(15, 4);
 
 <br>
 
-[![nodef](https://merferry.glitch.me/card/extra-bit.svg)](https://nodef.github.io)
+[![](https://img.youtube.com/vi/4Yy0pPTrHlk/maxresdefault.jpg)](https://www.youtube.com/watch?v=4Yy0pPTrHlk)
 
 [bit]: https://en.wikipedia.org/wiki/Bit
 [bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
