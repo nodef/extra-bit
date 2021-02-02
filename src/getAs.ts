@@ -1,5 +1,5 @@
 /**
- * Gets bits as per mask.
+ * Get bits as per mask.
  * @param x an int32
  * @param m bit mask
  */

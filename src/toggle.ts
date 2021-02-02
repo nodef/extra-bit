@@ -1,5 +1,5 @@
 /**
- * Toggles a bit.
+ * Toggle a bit.
  * @param x an int32
  * @param i bit index
  */

@@ -7,7 +7,7 @@ function parity1(x: number): number {
 }
 
 /**
- * Gets n-bit parity.
+ * Get n-bit parity.
  * @param x an int32
  * @param n number of bits (1)
  */
