@@ -1,0 +1,236 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>extra-bit</title>
+	<meta name="description" content="Documentation for extra-bit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">extra-bit</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>extra-bit</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p>The <a href="https://en.wikipedia.org/wiki/Bit">bit</a> is a basic unit of information in information theory, computing.
+					This package includes <a href="https://graphics.stanford.edu/~seander/bithacks.html">bit twiddling hacks</a> by Sean Eron Anderson and many others.<br>
+					:package: <a href="https://www.npmjs.com/package/extra-bit">NPM</a>,
+					:smiley_cat: <a href="https://github.com/orgs/nodef/packages?repo_name=extra-bit">GitHub</a>,
+					:running: <a href="https://npm.runkit.com/extra-bit">RunKit</a>,
+					:vhs: <a href="https://asciinema.org/a/337114">Asciinema</a>,
+					:moon: <a href="https://www.npmjs.com/package/extra-bit.min">Minified</a>,
+					:scroll: <a href="https://unpkg.com/extra-bit/">Files</a>,
+					:newspaper: <a href="https://nodef.github.io/extra-bit/">JSDoc</a>,
+				:blue_book: <a href="https://github.com/nodef/extra-bit/wiki/">Wiki</a>.</p>
+				<blockquote>
+					<p>Stability: Experimental.</p>
+				</blockquote>
+				<br>
+				<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">bit</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;extra-bit&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// import * as bit from &quot;extra-bit&quot;;</span>
+<span style="color: #008000">// import * as bit from &quot;https://unpkg.com/extra-bit@1.0.50/index.mjs&quot;; (deno)</span>
+
+<span style="color: #001080">bit</span><span style="color: #000000">.</span><span style="color: #795E26">count</span><span style="color: #000000">(</span><span style="color: #098658">7</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 3 (111 ⇒ 3)</span>
+
+<span style="color: #001080">bit</span><span style="color: #000000">.</span><span style="color: #795E26">parity</span><span style="color: #000000">(</span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 2 (10,00 ⇒ 10)</span>
+
+<span style="color: #001080">bit</span><span style="color: #000000">.</span><span style="color: #795E26">swap</span><span style="color: #000000">(</span><span style="color: #098658">6</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">0</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 5 (110 ⇒ 101)</span>
+
+<span style="color: #001080">bit</span><span style="color: #000000">.</span><span style="color: #795E26">reverse</span><span style="color: #000000">(</span><span style="color: #098658">0xFFFF0000</span><span style="color: #000000">);</span>
+<span style="color: #008000">// 65535 (0x0000FFFF)</span>
+
+<span style="color: #001080">bit</span><span style="color: #000000">.</span><span style="color: #795E26">signExtend</span><span style="color: #000000">(</span><span style="color: #098658">15</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">);</span>
+<span style="color: #008000">// -1</span>
+</code></pre>
+				<br>
+				<br>
+				<a href="#index" id="index" style="color: inherit; text-decoration: none;">
+					<h2>Index</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>Method</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/get">get</a></td>
+							<td>Gets a bit.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/set">set</a></td>
+							<td>Sets a bit.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/toggle">toggle</a></td>
+							<td>Toggles a bit.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/swap">swap</a></td>
+							<td>Swaps bit sequences.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/scan">scan</a></td>
+							<td>Finds index of first set bit from LSB.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/count">count</a></td>
+							<td>Counts bits set.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/parity">parity</a></td>
+							<td>Finds n-bit parity.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/rotate">rotate</a></td>
+							<td>Rotates bits.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/reverse">reverse</a></td>
+							<td>Reverses all bits.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/merge">merge</a></td>
+							<td>Merges bits as per mask.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/interleave">interleave</a></td>
+							<td>Interleaves bits of two int16s.</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/nodef/extra-bit/wiki/signExtend">signExtend</a></td>
+							<td>Sign extends variable bit-width integer.</td>
+						</tr>
+				</tbody></table>
+				<br>
+				<br>
+				<p><a href="https://www.youtube.com/watch?v=4Yy0pPTrHlk"><img src="https://img.youtube.com/vi/4Yy0pPTrHlk/maxresdefault.jpg" alt=""></a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function">
+						<a href="modules.html#count" class="tsd-kind-icon">count</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#get" class="tsd-kind-icon">get</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getas" class="tsd-kind-icon">get<wbr>As</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#interleave" class="tsd-kind-icon">interleave</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#merge" class="tsd-kind-icon">merge</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#parity" class="tsd-kind-icon">parity</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#reverse" class="tsd-kind-icon">reverse</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#rotate" class="tsd-kind-icon">rotate</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#scan" class="tsd-kind-icon">scan</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#scanreverse" class="tsd-kind-icon">scan<wbr>Reverse</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#set" class="tsd-kind-icon">set</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setas" class="tsd-kind-icon">set<wbr>As</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#signextend" class="tsd-kind-icon">sign<wbr>Extend</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#swap" class="tsd-kind-icon">swap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#toggle" class="tsd-kind-icon">toggle</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#toggleas" class="tsd-kind-icon">toggle<wbr>As</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
