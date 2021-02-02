@@ -9,9 +9,9 @@ This package includes [bit twiddling hacks] by Sean Eron Anderson and many other
 > Stability: Experimental.
 
 ```javascript
-const bit = require('extra-bit');
-// import * as bit from 'extra-bit';
-// import * as bit from 'https://unpkg.com/extra-bit@1.0.50/index.mjs'; (deno)
+const bit = require("extra-bit");
+// import * as bit from "extra-bit";
+// import * as bit from "https://unpkg.com/extra-bit@1.0.50/index.mjs"; (deno)
 
 bit.count(7);
 // 3 (111 => 3)

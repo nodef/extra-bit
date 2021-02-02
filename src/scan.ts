@@ -1,4 +1,4 @@
-import MOD37_POS32 from './_MOD37_POS32';
+import MOD37_POS32 from "./_MOD37_POS32";
 
 /**
  * Get index of first set bit from LSB.

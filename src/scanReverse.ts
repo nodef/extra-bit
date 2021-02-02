@@ -1,4 +1,4 @@
-import DEBRUIJN_POS32 from './_DEBRUIJN_POS32';
+import DEBRUIJN_POS32 from "./_DEBRUIJN_POS32";
 
 /**
  * Get index of first set bit from MSB.
