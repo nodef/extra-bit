@@ -1,5 +1,5 @@
 /**
- * Set bits as per mask.
+ * Sets bits as per mask.
  * @param x an int32
  * @param m bit mask
  * @param f bit value (1)

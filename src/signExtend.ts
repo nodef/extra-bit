@@ -1,5 +1,5 @@
 /**
- * Sign extend variable bit-width integer.
+ * Sign extends variable bit-width integer.
  * @param x variable bit-width integer
  * @param w bit width (32)
  */

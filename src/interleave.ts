@@ -1,5 +1,5 @@
 /**
- * Interleave bits of two int16s.
+ * Interleaves bits of two int16s.
  * @param x first int16
  * @param y second int16
  * @returns int32

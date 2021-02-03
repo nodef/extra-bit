@@ -1,5 +1,5 @@
 /**
- * Reverse all bits.
+ * Reverses all bits.
  * @param x an int32
  */
 function reverse(x: number): number {

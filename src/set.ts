@@ -1,5 +1,5 @@
 /**
- * Set a bit.
+ * Sets a bit.
  * @param x an int32
  * @param i bit index
  * @param f bit value (1)

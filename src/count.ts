@@ -1,5 +1,5 @@
 /**
- * Count bits set.
+ * Counts bits set.
  * @param x an int32
  */
 function count(x: number): number {
