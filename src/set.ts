@@ -1,10 +1,13 @@
+import ones from "./_ones";
+
 /**
  * Sets a bit.
  * @param x an int32
  * @param i bit index
- * @param f bit value (1)
+ * @param v bit value (1)
+ * @param w bit width (1)
  */
-function set(x: number, i: number, f: number=1): number {
-  return (x & ~(1<<i)) | (f<<i);
+function set(x: number, i: number, v: number=1, w: number=1): number {
+  return (x & ~(ones(w)<<i)) | (v<<i);
 }
 export default set;
