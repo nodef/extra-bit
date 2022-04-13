@@ -1,17 +1,19 @@
-# Parts
+# Source only
+.gitmodules
+.github/
+.docs/
 src/
+data/
 wiki/
 tests/
-.gitmodules
+TODO
 
 # Build
 .build/
+coverage/
 .travis.yml
+.coveralls.yml
 tsconfig.json
-rollup.config.js
 jestconfig.json
-
-# Others
-unused/
-unused.*
-TODO
+rollup.config.js
+build.js
