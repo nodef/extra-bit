@@ -1,7 +1,7 @@
 import ones from "./_ones";
 
 /**
- * Gets a bit.
+ * Get a bit.
  * @param x an int32
  * @param i bit index
  * @param w bit width (1)

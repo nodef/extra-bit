@@ -1,5 +1,5 @@
 /**
- * Rotates bits.
+ * Rotate bits.
  * @param x an int32
  * @param n rotate amount (+ve: left, -ve: right)
  */
