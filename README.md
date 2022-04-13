@@ -1,20 +1,23 @@
 The [bit] is a basic unit of information in information theory, computing.
 This package includes [bit twiddling hacks] by Sean Eron Anderson and many others.<br>
-:package: [NPM](https://www.npmjs.com/package/extra-bit),
-:smiley_cat: [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-bit),
-:running: [RunKit](https://npm.runkit.com/extra-bit),
-:vhs: [Asciinema](https://asciinema.org/a/337114),
-:moon: [Minified](https://www.npmjs.com/package/extra-bit.min),
-:scroll: [Files](https://unpkg.com/extra-bit/),
-:newspaper: [JSDoc](https://nodef.github.io/extra-bit/),
-:blue_book: [Wiki](https://github.com/nodef/extra-bit/wiki/).
+📦 [Node.js](https://www.npmjs.com/package/extra-bit),
+🌐 [Web](https://www.npmjs.com/package/extra-bit.web),
+📜 [Files](https://unpkg.com/extra-bit/),
+📰 [Docs](https://nodef.github.io/extra-bit/).
+📘 [Wiki](https://github.com/nodef/extra-bit/wiki/).
 
-> Stability: Experimental.
+This package is available in *Node.js* and *Web* formats. The web format
+is exposed as `extra_bit` standalone variable and can be loaded from
+[jsDelivr CDN].
+
+> Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
+
+[jsDelivr CDN]: https://cdn.jsdelivr.net/npm/extra-bit.web/index.js
 
 <br>
 
 ```javascript
-const bit = require("extra-bit");
+const bit = require('extra-bit');
 // import * as bit from "extra-bit";
 // import * as bit from "https://unpkg.com/extra-bit@1.0.50/index.mjs"; (deno)
 
@@ -40,20 +43,24 @@ bit.signExtend(15, 4);
 
 ## Index
 
-| Method       | Action                                   |
-| ------------ | ---------------------------------------- |
-| [get]        | Gets a bit.                              |
-| [set]        | Sets a bit.                              |
-| [toggle]     | Toggles a bit.                           |
-| [swap]       | Swaps bit sequences.                     |
-| [scan]       | Finds index of first set bit from LSB.   |
-| [count]      | Counts bits set.                         |
-| [parity]     | Finds n-bit parity.                      |
-| [rotate]     | Rotates bits.                            |
-| [reverse]    | Reverses all bits.                       |
-| [merge]      | Merges bits as per mask.                 |
-| [interleave] | Interleaves bits of two int16s.          |
-| [signExtend] | Sign extends variable bit-width integer. |
+| Property | Description |
+|  ----  |  ----  |
+| [get] | Get a bit. |
+| [getAs] | Get bits as per mask. |
+| [set] | Set a bit. |
+| [setAs] | Set bits as per mask. |
+| [toggle] | Toggle a bit. |
+| [toggleAs] | Toggle bits as per mask. |
+| [swap] | Swap bit sequences. |
+| [scan] | Find index of first set bit from LSB. |
+| [scanReverse] | Find index of first set bit from MSB. |
+| [count] | Count bits set. |
+| [parity] | Find n-bit parity. |
+| [rotate] | Rotate bits. |
+| [reverse] | Reverse all bits. |
+| [merge] | Merge bits as per mask. |
+| [interleave] | Interleave bits of two int16s. |
+| [signExtend] | Sign extend variable bit-width integer. |
 
 <br>
 <br>
@@ -62,15 +69,19 @@ bit.signExtend(15, 4);
 
 [bit]: https://en.wikipedia.org/wiki/Bit
 [bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
-[get]: https://github.com/nodef/extra-bit/wiki/get
-[set]: https://github.com/nodef/extra-bit/wiki/set
-[swap]: https://github.com/nodef/extra-bit/wiki/swap
-[scan]: https://github.com/nodef/extra-bit/wiki/scan
-[count]: https://github.com/nodef/extra-bit/wiki/count
-[parity]: https://github.com/nodef/extra-bit/wiki/parity
-[reverse]: https://github.com/nodef/extra-bit/wiki/reverse
-[merge]: https://github.com/nodef/extra-bit/wiki/merge
-[interleave]: https://github.com/nodef/extra-bit/wiki/interleave
-[signExtend]: https://github.com/nodef/extra-bit/wiki/signExtend
-[toggle]: https://github.com/nodef/extra-bit/wiki/toggle
-[rotate]: https://github.com/nodef/extra-bit/wiki/rotate
+[get]: https://nodef.github.io/extra-bit/modules.html#get
+[getAs]: https://nodef.github.io/extra-bit/modules.html#getAs
+[set]: https://nodef.github.io/extra-bit/modules.html#set
+[setAs]: https://nodef.github.io/extra-bit/modules.html#setAs
+[toggle]: https://nodef.github.io/extra-bit/modules.html#toggle
+[toggleAs]: https://nodef.github.io/extra-bit/modules.html#toggleAs
+[swap]: https://nodef.github.io/extra-bit/modules.html#swap
+[scan]: https://nodef.github.io/extra-bit/modules.html#scan
+[scanReverse]: https://nodef.github.io/extra-bit/modules.html#scanReverse
+[count]: https://nodef.github.io/extra-bit/modules.html#count
+[parity]: https://nodef.github.io/extra-bit/modules.html#parity
+[rotate]: https://nodef.github.io/extra-bit/modules.html#rotate
+[reverse]: https://nodef.github.io/extra-bit/modules.html#reverse
+[merge]: https://nodef.github.io/extra-bit/modules.html#merge
+[interleave]: https://nodef.github.io/extra-bit/modules.html#interleave
+[signExtend]: https://nodef.github.io/extra-bit/modules.html#signExtend
