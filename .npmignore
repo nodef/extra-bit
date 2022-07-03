@@ -6,6 +6,9 @@ src/
 data/
 wiki/
 tests/
+unused/
+test.js
+CITATION.cff
 TODO
 
 # Build

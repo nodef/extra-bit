@@ -1,7 +1,7 @@
 {
   "name": "extra-bit",
-  "version": "2.1.0",
-  "description": "The bit is a basic unit of information in information theory, computing.",
+  "version": "2.1.1",
+  "description": "A collection of common bitwise operations.",
   "sideEffects": false,
   "main": "index.js",
   "module": "index.mjs",
@@ -29,11 +29,10 @@
   },
   "homepage": "https://github.com/nodef/extra-bit#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^21.0.3",
-    "@rollup/plugin-node-resolve": "^13.2.0",
-    "@types/node": "^17.0.23",
-    "extra-build": "^2.0.31",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "extra-build": "^2.1.31",
     "rollup-plugin-cleanup": "^3.2.1",
-    "rollup-plugin-dts": "^4.2.1"
+    "rollup-plugin-dts": "^4.2.2"
   }
 }

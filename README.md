@@ -1,10 +1,15 @@
-The [bit] is a basic unit of information in information theory, computing.
-This package includes [bit twiddling hacks] by Sean Eron Anderson and many others.<br>
+A collection of common bitwise operations.<br>
 📦 [Node.js](https://www.npmjs.com/package/extra-bit),
 🌐 [Web](https://www.npmjs.com/package/extra-bit.web),
 📜 [Files](https://unpkg.com/extra-bit/),
 📰 [Docs](https://nodef.github.io/extra-bit/).
 📘 [Wiki](https://github.com/nodef/extra-bit/wiki/).
+
+The [bit] is a basic unit of information in information theory, computing. This
+package includes [bit twiddling hacks] by *Sean Eron Anderson* and many others.
+JavaScript converts a `Number` (a *64-bit floating point number*) to a *32-bit*
+*integer* when bitwise operators (such as `|`) are applied. All bitwise operations
+are performed on **32-bit integers**.
 
 This package is available in *Node.js* and *Web* formats. The web format
 is exposed as `extra_bit` standalone variable and can be loaded from
@@ -12,6 +17,8 @@ is exposed as `extra_bit` standalone variable and can be loaded from
 
 > Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
 
+[bit]: https://en.wikipedia.org/wiki/Bit
+[bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
 [jsDelivr CDN]: https://cdn.jsdelivr.net/npm/extra-bit.web/index.js
 
 <br>
@@ -19,22 +26,22 @@ is exposed as `extra_bit` standalone variable and can be loaded from
 ```javascript
 const bit = require('extra-bit');
 // import * as bit from "extra-bit";
-// import * as bit from "https://unpkg.com/extra-bit@1.0.50/index.mjs"; (deno)
+// import * as bit from "https://unpkg.com/extra-bit/index.mjs"; (deno)
 
 bit.count(7);
-// 3 (111 ⇒ 3)
+// → 3 (111 ⇒ 3)
 
 bit.parity(8, 2);
-// 2 (10,00 ⇒ 10)
+// → 2 (10,00 ⇒ 10)
 
 bit.swap(6, 1, 0);
-// 5 (110 ⇒ 101)
+// → 5 (110 ⇒ 101)
 
 bit.reverse(0xFFFF0000);
-// 65535 (0x0000FFFF)
+// → 65535 (0x0000FFFF)
 
 bit.signExtend(15, 4);
-// -1
+// → -1
 ```
 
 <br>
@@ -45,18 +52,18 @@ bit.signExtend(15, 4);
 
 | Property | Description |
 |  ----  |  ----  |
-| [get] | Get a bit. |
+| [get] | Get bits at specified index. |
 | [getAs] | Get bits as per mask. |
-| [set] | Set a bit. |
+| [set] | Set bits at specified index. |
 | [setAs] | Set bits as per mask. |
-| [toggle] | Toggle a bit. |
+| [toggle] | Toggle bits at specified index. |
 | [toggleAs] | Toggle bits as per mask. |
-| [swap] | Swap bit sequences. |
+| [swap] | Swap bit sequences at specified indices. |
 | [scan] | Find index of first set bit from LSB. |
 | [scanReverse] | Find index of first set bit from MSB. |
 | [count] | Count bits set. |
-| [parity] | Find n-bit parity. |
-| [rotate] | Rotate bits. |
+| [parity] | Calculate n-bit parity. |
+| [rotate] | Rotate bits by a certain amount. |
 | [reverse] | Reverse all bits. |
 | [merge] | Merge bits as per mask. |
 | [interleave] | Interleave bits of two int16s. |
@@ -65,10 +72,10 @@ bit.signExtend(15, 4);
 <br>
 <br>
 
+
 [![](https://img.youtube.com/vi/4Yy0pPTrHlk/maxresdefault.jpg)](https://www.youtube.com/watch?v=4Yy0pPTrHlk)
 
-[bit]: https://en.wikipedia.org/wiki/Bit
-[bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
+
 [get]: https://nodef.github.io/extra-bit/modules.html#get
 [getAs]: https://nodef.github.io/extra-bit/modules.html#getAs
 [set]: https://nodef.github.io/extra-bit/modules.html#set
