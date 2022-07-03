@@ -2,7 +2,7 @@ A collection of common bitwise operations.<br>
 📦 [Node.js](https://www.npmjs.com/package/extra-bit),
 🌐 [Web](https://www.npmjs.com/package/extra-bit.web),
 📜 [Files](https://unpkg.com/extra-bit/),
-📰 [Docs](https://nodef.github.io/extra-bit/).
+📰 [Docs](https://nodef.github.io/extra-bit/),
 📘 [Wiki](https://github.com/nodef/extra-bit/wiki/).
 
 The [bit] is a basic unit of information in information theory, computing. This
@@ -73,7 +73,17 @@ bit.signExtend(15, 4);
 <br>
 
 
-[![](https://img.youtube.com/vi/4Yy0pPTrHlk/maxresdefault.jpg)](https://www.youtube.com/watch?v=4Yy0pPTrHlk)
+## References
+
+- [Bit Twiddling Hacks by Sean Eron Anderson](https://graphics.stanford.edu/~seander/bithacks.html)
+- [bit-twiddle package by @mikolalysenko](https://www.npmjs.com/package/bit-twiddle)
+
+<br>
+<br>
+
+
+[![](https://img.youtube.com/vi/4Yy0pPTrHlk/maxresdefault.jpg)](https://www.youtube.com/watch?v=4Yy0pPTrHlk)<br>
+[![DOI](https://zenodo.org/badge/249481796.svg)](https://zenodo.org/badge/latestdoi/249481796)
 
 
 [get]: https://nodef.github.io/extra-bit/modules.html#get
