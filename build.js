@@ -1,6 +1,7 @@
 const build = require('extra-build');
 
 const owner  = 'nodef';
+const repo   = build.readMetadata('.').name;
 const srcts  = 'index.ts';
 const LOCATIONS = [
   'src/index.ts',
@@ -40,11 +41,30 @@ function publishRoot(ds, ver, typ) {
 }
 
 
+// Transform JSDoc in .d.ts file.
+function transformJsdoc(x, dm) {
+  if (!dm.has(x.name)) return null;
+  var link = `[📘](https://github.com/${owner}/${repo}/wiki/${x.name})`;
+  x.description = x.description.trim() + '\n' + link;
+  console.log(x);
+  return x;
+}
+
+
+// Bundle script for test or publish.
+function bundleScript(ds) {
+  var dm = new Map(ds.map(d => [d.name, d]));
+  build.exec(`tsc`);
+  build.bundleScript(`.build/${srcts}`);
+  build.jsdocifyScript('index.d.ts', 'index.d.ts', x => transformJsdoc(x, dm));
+}
+
+
 // Deploy root package to NPM, GitHub.
 function deployRoot(ds, ver) {
   var m   = build.readMetadata('.');
   var sym = build.symbolname(m.name);
-  build.bundleScript(`.build/${srcts}`);
+  bundleScript(ds);
   publishRoot(ds, ver, '');
   build.webifyScript('index.mjs', 'index.mjs', {format: 'esm'});
   build.webifyScript('index.js',  'index.js',  {format: 'cjs', symbol: sym});
@@ -56,7 +76,6 @@ function deployRoot(ds, ver) {
 function deployAll(ds) {
   var m   = build.readMetadata('.');
   var ver = build.nextUnpublishedVersion(m.name, m.version);
-  build.exec(`tsc`);
   build.updateGithubRepoDetails({topics: keywords(ds)});
   build.generateDocs(`src/${srcts}`);
   build.publishDocs();
@@ -108,12 +127,13 @@ function updateReadme(ds) {
 }
 
 
+// Finally.
 function main(a) {
   var p  = build.loadDocs([`src/${srcts}`]);
   var ds = p.children.map(build.docsDetails);
   if (a[2] === 'deploy') deployAll(ds);
   else if (a[2] === 'wiki') generateWiki(ds);
   else if (a[2] === 'readme') updateReadme(ds);
-  else build.bundleScript(`.build/${srcts}`);
+  else bundleScript(ds);
 }
 main(process.argv);
