@@ -46,7 +46,6 @@ function transformJsdoc(x, dm) {
   if (!dm.has(x.name)) return null;
   var link = `[📘](https://github.com/${owner}/${repo}/wiki/${x.name})`;
   x.description = x.description.trim() + '\n' + link;
-  console.log(x);
   return x;
 }
 
@@ -72,14 +71,26 @@ function deployRoot(ds, ver) {
 }
 
 
-// Deploy root, sub packages to NPM, GitHub.
-function deployAll(ds) {
-  var m   = build.readMetadata('.');
-  var ver = build.nextUnpublishedVersion(m.name, m.version);
+// Deploy docs.
+function deployDocs(ds) {
   build.updateGithubRepoDetails({topics: keywords(ds)});
   build.generateDocs(`src/${srcts}`);
   build.publishDocs();
+}
+
+
+// Deploy root, sub packages to NPM, GitHub.
+function deployPackages(ds) {
+  var m   = build.readMetadata('.');
+  var ver = build.nextUnpublishedVersion(m.name, m.version);
   deployRoot(ds, ver);
+}
+
+
+// Deploy root, sub packages to NPM, GitHub.
+function deployAll(ds) {
+  deployDocs(ds);
+  deployPackages(ds);
 }
 
 
@@ -131,9 +142,11 @@ function updateReadme(ds) {
 function main(a) {
   var p  = build.loadDocs([`src/${srcts}`]);
   var ds = p.children.map(build.docsDetails);
-  if (a[2] === 'deploy') deployAll(ds);
-  else if (a[2] === 'wiki') generateWiki(ds);
-  else if (a[2] === 'readme') updateReadme(ds);
+  if (a[2]==='wiki') generateWiki(ds);
+  else if (a[2]==='readme') updateReadme(ds);
+  else if (a[2]==='deploy') deployAll(ds);
+  else if (a[2]==='deploy-docs') deployDocs(ds);
+  else if (a[2]==='deploy-packages') deployPackages(ds);
   else bundleScript(ds);
 }
 main(process.argv);

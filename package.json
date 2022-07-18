@@ -1,6 +1,6 @@
 {
   "name": "extra-bit",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "A collection of common bitwise operations.",
   "sideEffects": false,
   "main": "index.js",
@@ -12,7 +12,9 @@
   "scripts": {
     "test": "tsc && rollup -c && node ./test",
     "build": "node ./build",
-    "deploy": "node ./build deploy"
+    "deploy": "node ./build deploy",
+    "deploy-docs": "node ./build deploy-docs",
+    "deploy-packages": "node ./build deploy-packages"
   },
   "keywords": [
     "extra",
