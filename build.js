@@ -18,8 +18,8 @@ function keywords(ds) {
 }
 
 
-// Publish root package to NPM, GitHub.
-function publishRoot(ds, ver, typ) {
+// Publish a root package to NPM, GitHub.
+function publishRootPackage(ds, ver, typ) {
   var _package = build.readDocument('package.json');
   var _readme  = build.readDocument('README.md');
   var m  = build.readMetadata('.');
@@ -59,38 +59,31 @@ function bundleScript(ds) {
 }
 
 
-// Deploy root package to NPM, GitHub.
-function deployRoot(ds, ver) {
+// Publish root packages to NPM, GitHub.
+function publishRootPackages(ds, ver) {
   var m   = build.readMetadata('.');
   var sym = build.symbolname(m.name);
   bundleScript(ds);
-  publishRoot(ds, ver, '');
+  publishRootPackage(ds, ver, '');
   build.webifyScript('index.mjs', 'index.mjs', {format: 'esm'});
   build.webifyScript('index.js',  'index.js',  {format: 'cjs', symbol: sym});
-  publishRoot(ds, ver, 'web');
+  publishRootPackage(ds, ver, 'web');
 }
 
 
-// Deploy docs.
-function deployDocs(ds) {
+// Publish docs.
+function publishDocs(ds) {
   build.updateGithubRepoDetails({topics: keywords(ds)});
   build.generateDocs(`src/${srcts}`);
   build.publishDocs();
 }
 
 
-// Deploy root, sub packages to NPM, GitHub.
-function deployPackages(ds) {
+// Pushish root, sub packages to NPM, GitHub.
+function publishPackages(ds) {
   var m   = build.readMetadata('.');
   var ver = build.nextUnpublishedVersion(m.name, m.version);
-  deployRoot(ds, ver);
-}
-
-
-// Deploy root, sub packages to NPM, GitHub.
-function deployAll(ds) {
-  deployDocs(ds);
-  deployPackages(ds);
+  publishRootPackages(ds, ver);
 }
 
 
@@ -144,9 +137,8 @@ function main(a) {
   var ds = p.children.map(build.docsDetails);
   if (a[2]==='wiki') generateWiki(ds);
   else if (a[2]==='readme') updateReadme(ds);
-  else if (a[2]==='deploy') deployAll(ds);
-  else if (a[2]==='deploy-docs') deployDocs(ds);
-  else if (a[2]==='deploy-packages') deployPackages(ds);
+  else if (a[2]==='publish-docs') publishDocs(ds);
+  else if (a[2]==='publish-packages') publishPackages(ds);
   else bundleScript(ds);
 }
 main(process.argv);
