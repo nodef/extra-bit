@@ -39,8 +39,7 @@ jobs:
           node-version: 18.x
       - run: FORCE_COLOR=1 npm ci
       - run: FORCE_COLOR=1 npm test
-      - run: git clone https://${GITHUB_TOKEN}@github.com/nodef/deploy "$HOME/deploy"
-      - run: bash "$HOME/deploy/coverage.sh"
+      - uses: paambaati/codeclimate-action@v3.0.0
       - uses: coverallsapp/github-action@master
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
