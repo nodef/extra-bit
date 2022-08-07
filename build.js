@@ -28,7 +28,7 @@ function publishRootPackage(ds, ver, typ) {
   m.keywords = keywords(ds);
   if (typ) {
     m.name = `${m.name}.${typ}`;
-    m.description = m.description.replace(/\.$/, `{${typ}}.`);
+    m.description = m.description.replace(/\.$/, ` {${typ}}.`);
     md = md.replace(/(unpkg\.com\/)(\S+?)(\/\))/, `$1$2.${typ}$3`);
   }
   build.writeMetadata('.', m);
