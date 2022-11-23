@@ -90,19 +90,19 @@ bit.signExtend(15, 4);
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa297c53c53f4e01bce8/maintainability)](https://codeclimate.com/github/nodef/extra-bit/maintainability)
 
 
-[get]: https://nodef.github.io/extra-bit/functions/get.html
-[getAs]: https://nodef.github.io/extra-bit/functions/getAs.html
-[set]: https://nodef.github.io/extra-bit/functions/set.html
-[setAs]: https://nodef.github.io/extra-bit/functions/setAs.html
-[toggle]: https://nodef.github.io/extra-bit/functions/toggle.html
-[toggleAs]: https://nodef.github.io/extra-bit/functions/toggleAs.html
-[swap]: https://nodef.github.io/extra-bit/functions/swap.html
-[scan]: https://nodef.github.io/extra-bit/functions/scan.html
-[scanReverse]: https://nodef.github.io/extra-bit/functions/scanReverse.html
-[count]: https://nodef.github.io/extra-bit/functions/count.html
-[parity]: https://nodef.github.io/extra-bit/functions/parity.html
-[rotate]: https://nodef.github.io/extra-bit/functions/rotate.html
-[reverse]: https://nodef.github.io/extra-bit/functions/reverse.html
-[merge]: https://nodef.github.io/extra-bit/functions/merge.html
-[interleave]: https://nodef.github.io/extra-bit/functions/interleave.html
-[signExtend]: https://nodef.github.io/extra-bit/functions/signExtend.html
+[get]: https://github.com/nodef/extra-bit/wiki/get
+[getAs]: https://github.com/nodef/extra-bit/wiki/getAs
+[set]: https://github.com/nodef/extra-bit/wiki/set
+[setAs]: https://github.com/nodef/extra-bit/wiki/setAs
+[toggle]: https://github.com/nodef/extra-bit/wiki/toggle
+[toggleAs]: https://github.com/nodef/extra-bit/wiki/toggleAs
+[swap]: https://github.com/nodef/extra-bit/wiki/swap
+[scan]: https://github.com/nodef/extra-bit/wiki/scan
+[scanReverse]: https://github.com/nodef/extra-bit/wiki/scanReverse
+[count]: https://github.com/nodef/extra-bit/wiki/count
+[parity]: https://github.com/nodef/extra-bit/wiki/parity
+[rotate]: https://github.com/nodef/extra-bit/wiki/rotate
+[reverse]: https://github.com/nodef/extra-bit/wiki/reverse
+[merge]: https://github.com/nodef/extra-bit/wiki/merge
+[interleave]: https://github.com/nodef/extra-bit/wiki/interleave
+[signExtend]: https://github.com/nodef/extra-bit/wiki/signExtend
