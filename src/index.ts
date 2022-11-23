@@ -11,7 +11,7 @@ function ones(w: number) {
  * Get bits at specified index.
  * @param x an int32
  * @param i bit index
- * @param w bit width (1)
+ * @param w bit width [1]
  */
 export function get(x: number, i: number, w: number=1): number {
   return (x>>>i) & ones(w);
@@ -32,8 +32,8 @@ export function getAs(x: number, m: number): number {
  * Set bits at specified index.
  * @param x an int32
  * @param i bit index
- * @param v bit value (1)
- * @param w bit width (1)
+ * @param v bit value [1]
+ * @param w bit width [1]
  */
 export function set(x: number, i: number, v: number=1, w: number=1): number {
   return (x & ~(ones(w)<<i)) | (v<<i);
@@ -44,7 +44,7 @@ export function set(x: number, i: number, v: number=1, w: number=1): number {
  * Set bits as per mask.
  * @param x an int32
  * @param m bit mask
- * @param f bit value (1)
+ * @param f bit value [1]
  */
 export function setAs(x: number, m: number, f: number=1): number {
   return (x & ~m) | (-f & m);
@@ -55,7 +55,7 @@ export function setAs(x: number, m: number, f: number=1): number {
  * Toggle bits at specified index.
  * @param x an int32
  * @param i bit index
- * @param w bit width (1)
+ * @param w bit width [1]
  */
 export function toggle(x: number, i: number, w: number=1): number {
   return x ^ (ones(w)<<i);
@@ -77,7 +77,7 @@ export function toggleAs(x: number, m: number): number {
  * @param x an int32
  * @param i first bit index
  * @param j second bit index
- * @param w bit width (1)
+ * @param w bit width [1]
  */
 export function swap(x: number, i: number, j: number, w: number=1): number {
   var t = ((x>>>i)^(x>>>j)) & ones(w);
@@ -143,7 +143,7 @@ function parity1(x: number): number {
 /**
  * Calculate n-bit parity.
  * @param x an int32
- * @param n number of bits (1)
+ * @param n number of bits [1]
  */
 export function parity(x: number, n: number=1): number {
   if (n===1) return parity1(x);

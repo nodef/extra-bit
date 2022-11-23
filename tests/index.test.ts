@@ -1,20 +1,22 @@
-import * as bit      from "../src";
-import {get}         from "../src";
-import {getAs}       from "../src";
-import {set}         from "../src";
-import {setAs}       from "../src";
-import {toggle}      from "../src";
-import {toggleAs}    from "../src";
-import {swap}        from "../src";
-import {scan}        from "../src";
-import {scanReverse} from "../src";
-import {count}       from "../src";
-import {parity}      from "../src";
-import {rotate}      from "../src";
-import {reverse}     from "../src";
-import {merge}       from "../src";
-import {interleave}  from "../src";
-import {signExtend}  from "../src";
+import * as bit from "../src";
+import {
+  get,
+  getAs,
+  set,
+  setAs,
+  toggle,
+  toggleAs,
+  swap,
+  scan,
+  scanReverse,
+  count,
+  parity,
+  rotate,
+  reverse,
+  merge,
+  interleave,
+  signExtend,
+} from "../src";
 
 
 
@@ -40,6 +42,8 @@ test("example1", () => {
   expect(a).toBe(-1);
   // → -1
 });
+
+
 
 
 // Get bits at specified index.
