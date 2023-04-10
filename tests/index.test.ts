@@ -1,4 +1,3 @@
-import * as bit from "../src";
 import {
   get,
   getAs,
@@ -22,23 +21,23 @@ import {
 
 
 test("example1", () => {
-  var a = bit.count(7);
+  var a = count(7);
   expect(a).toBe(3);
   // → 3 (111 ⇒ 3)
 
-  var a = bit.parity(8, 2);
+  var a = parity(8, 2);
   expect(a).toBe(2);
   // → 2 (10,00 ⇒ 10)
 
-  var a = bit.swap(6, 1, 0);
+  var a = swap(6, 1, 0);
   expect(a).toBe(5);
   // → 5 (110 ⇒ 101)
 
-  var a = bit.reverse(0xFFFF0000);
+  var a = reverse(0xFFFF0000);
   expect(a).toBe(65535);
   // → 65535 (0x0000FFFF)
 
-  var a = bit.signExtend(15, 4);
+  var a = signExtend(15, 4);
   expect(a).toBe(-1);
   // → -1
 });

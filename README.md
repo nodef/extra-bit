@@ -1,19 +1,23 @@
-A collection of common bitwise operations.<br>
+The [bit] is a basic unit of information in information theory, computing.<br>
 📦 [Node.js](https://www.npmjs.com/package/extra-bit),
 🌐 [Web](https://www.npmjs.com/package/extra-bit.web),
 📜 [Files](https://unpkg.com/extra-bit/),
 📰 [Docs](https://nodef.github.io/extra-bit/),
 📘 [Wiki](https://github.com/nodef/extra-bit/wiki/).
 
-The [bit] is a basic unit of information in information theory, computing. This
-package includes [bit twiddling hacks] by *Sean Eron Anderson* and many others.
-JavaScript converts a `Number` (a *64-bit floating point number*) to a *32-bit*
-*integer* when bitwise operators (such as `|`) are applied. All bitwise operations
-are performed on **32-bit integers**.
+The concept of a **bit**, which stands for *binary digit*, has been a
+fundamental unit of information in the fields of information theory and
+computing. Bitwise operations are used to manipulate and process data at the bit
+level, and these operations are *crucial for efficient programming* in a variety
+of domains, such as computer graphics and cryptography. JavaScript converts a
+`Number` (a *64-bit floating* *point number*) to a *32-bit integer* when bitwise
+operators (such as `|`) are applied. All bitwise operations are performed on
+**32-bit integers**. This package includes [bit twiddling hacks] by *Sean Eron*
+*Anderson* and many others.
 
-This package is available in *Node.js* and *Web* formats. The web format
-is exposed as `extra_bit` standalone variable and can be loaded from
-[jsDelivr CDN].
+This package is available in *Node.js* and *Web* formats. To use it on the web,
+simply use the `extra_bit` global variable after loading with a `<script>`
+tag from the [jsDelivr CDN].
 
 > Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
 
@@ -24,23 +28,23 @@ is exposed as `extra_bit` standalone variable and can be loaded from
 <br>
 
 ```javascript
-const bit = require('extra-bit');
-// import * as bit from "extra-bit";
-// import * as bit from "https://unpkg.com/extra-bit/index.mjs"; (deno)
+const xbit = require('extra-bit');
+// import * as xbit from "extra-bit";
+// import * as xbit from "https://unpkg.com/extra-bit/index.mjs"; (deno)
 
-bit.count(7);
+xbit.count(7);
 // → 3 (111 ⇒ 3)
 
-bit.parity(8, 2);
+xbit.parity(8, 2);
 // → 2 (10,00 ⇒ 10)
 
-bit.swap(6, 1, 0);
+xbit.swap(6, 1, 0);
 // → 5 (110 ⇒ 101)
 
-bit.reverse(0xFFFF0000);
+xbit.reverse(0xFFFF0000);
 // → 65535 (0x0000FFFF)
 
-bit.signExtend(15, 4);
+xbit.signExtend(15, 4);
 // → -1
 ```
 
