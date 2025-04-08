@@ -92,7 +92,7 @@ xbit.signExtend(15, 4);
 [![Coverage Status](https://coveralls.io/repos/github/nodef/extra-bit/badge.svg)](https://coveralls.io/github/nodef/extra-bit)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/fa297c53c53f4e01bce8/test_coverage)](https://codeclimate.com/github/nodef/extra-bit/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa297c53c53f4e01bce8/maintainability)](https://codeclimate.com/github/nodef/extra-bit/maintainability)
-
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-bit)
 
 [get]: https://github.com/nodef/extra-bit/wiki/get
 [getAs]: https://github.com/nodef/extra-bit/wiki/getAs
