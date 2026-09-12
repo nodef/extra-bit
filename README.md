@@ -1,9 +1,9 @@
 The [bit] is a basic unit of information in information theory, computing.<br>
-📦 [Node.js](https://www.npmjs.com/package/extra-bit),
-🌐 [Web](https://www.npmjs.com/package/extra-bit.web),
-📜 [Files](https://unpkg.com/extra-bit/),
-📰 [Docs](https://nodef.github.io/extra-bit/),
-📘 [Wiki](https://github.com/nodef/extra-bit/wiki/).
+
+▌
+📦 [JSR](https://jsr.io/@nodef/extra-bit),
+📦 [NPM](https://www.npmjs.com/package/extra-bit),
+📰 [Docs](https://jsr.io/@nodef/extra-bit/doc).
 
 The concept of a **bit**, which stands for *binary digit*, has been a
 fundamental unit of information in the fields of information theory and
@@ -15,22 +15,13 @@ operators (such as `|`) are applied. All bitwise operations are performed on
 **32-bit integers**. This package includes [bit twiddling hacks] by *Sean Eron*
 *Anderson* and many others.
 
-This package is available in *Node.js* and *Web* formats. To use it on the web,
-simply use the `extra_bit` global variable after loading with a `<script>`
-tag from the [jsDelivr CDN].
-
-> Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
-
 [bit]: https://en.wikipedia.org/wiki/Bit
 [bit twiddling hacks]: https://graphics.stanford.edu/~seander/bithacks.html
-[jsDelivr CDN]: https://cdn.jsdelivr.net/npm/extra-bit.web/index.js
 
 <br>
 
 ```javascript
-const xbit = require('extra-bit');
-// import * as xbit from "extra-bit";
-// import * as xbit from "https://unpkg.com/extra-bit/index.mjs"; (deno)
+import * as xbit from "jsr:@nodef/extra-bit";
 
 xbit.count(7);
 // → 3 (111 ⇒ 3)
@@ -86,27 +77,24 @@ xbit.signExtend(15, 4);
 <br>
 
 
-[![](https://img.youtube.com/vi/4Yy0pPTrHlk/maxresdefault.jpg)](https://www.youtube.com/watch?v=4Yy0pPTrHlk)<br>
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
-[![DOI](https://zenodo.org/badge/249481796.svg)](https://zenodo.org/badge/latestdoi/249481796)
-[![Coverage Status](https://coveralls.io/repos/github/nodef/extra-bit/badge.svg)](https://coveralls.io/github/nodef/extra-bit)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/fa297c53c53f4e01bce8/test_coverage)](https://codeclimate.com/github/nodef/extra-bit/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/fa297c53c53f4e01bce8/maintainability)](https://codeclimate.com/github/nodef/extra-bit/maintainability)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-bit)
 
-[get]: https://github.com/nodef/extra-bit/wiki/get
-[getAs]: https://github.com/nodef/extra-bit/wiki/getAs
-[set]: https://github.com/nodef/extra-bit/wiki/set
-[setAs]: https://github.com/nodef/extra-bit/wiki/setAs
-[toggle]: https://github.com/nodef/extra-bit/wiki/toggle
-[toggleAs]: https://github.com/nodef/extra-bit/wiki/toggleAs
-[swap]: https://github.com/nodef/extra-bit/wiki/swap
-[scan]: https://github.com/nodef/extra-bit/wiki/scan
-[scanReverse]: https://github.com/nodef/extra-bit/wiki/scanReverse
-[count]: https://github.com/nodef/extra-bit/wiki/count
-[parity]: https://github.com/nodef/extra-bit/wiki/parity
-[rotate]: https://github.com/nodef/extra-bit/wiki/rotate
-[reverse]: https://github.com/nodef/extra-bit/wiki/reverse
-[merge]: https://github.com/nodef/extra-bit/wiki/merge
-[interleave]: https://github.com/nodef/extra-bit/wiki/interleave
-[signExtend]: https://github.com/nodef/extra-bit/wiki/signExtend
+
+[get]: https://jsr.io/@nodef/extra-version/doc/~/get
+[getAs]: https://jsr.io/@nodef/extra-version/doc/~/getAs
+[set]: https://jsr.io/@nodef/extra-version/doc/~/set
+[setAs]: https://jsr.io/@nodef/extra-version/doc/~/setAs
+[toggle]: https://jsr.io/@nodef/extra-version/doc/~/toggle
+[toggleAs]: https://jsr.io/@nodef/extra-version/doc/~/toggleAs
+[swap]: https://jsr.io/@nodef/extra-version/doc/~/swap
+[scan]: https://jsr.io/@nodef/extra-version/doc/~/scan
+[scanReverse]: https://jsr.io/@nodef/extra-version/doc/~/scanReverse
+[count]: https://jsr.io/@nodef/extra-version/doc/~/count
+[parity]: https://jsr.io/@nodef/extra-version/doc/~/parity
+[rotate]: https://jsr.io/@nodef/extra-version/doc/~/rotate
+[reverse]: https://jsr.io/@nodef/extra-version/doc/~/reverse
+[merge]: https://jsr.io/@nodef/extra-version/doc/~/merge
+[interleave]: https://jsr.io/@nodef/extra-version/doc/~/interleave
+[signExtend]: https://jsr.io/@nodef/extra-version/doc/~/signExtend

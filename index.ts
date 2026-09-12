@@ -80,7 +80,7 @@ export function toggleAs(x: number, m: number): number {
  * @param w bit width [1]
  */
 export function swap(x: number, i: number, j: number, w: number=1): number {
-  var t = ((x>>>i)^(x>>>j)) & ones(w);
+  const t = ((x>>>i)^(x>>>j)) & ones(w);
   return x ^ ((t<<i)|(t<<j));
 }
 
@@ -147,7 +147,7 @@ function parity1(x: number): number {
  */
 export function parity(x: number, n: number=1): number {
   if (n===1) return parity1(x);
-  var m = (1<<n)-1, a = 0|0;
+  const m = (1<<n)-1; let a = 0|0;
   while (x) {
     a ^= x&m;
     x >>>= n;
@@ -161,7 +161,7 @@ export function parity(x: number, n: number=1): number {
  * @param x an int32
  * @param n rotate amount (+ve: left, -ve: right)
  */
-export function rotate(x: number, n: number=0) {
+export function rotate(x: number, n: number=0): number {
   return n<0? x<<32+n | x>>>-n : x<<n | x>>32-n;
 }
 
