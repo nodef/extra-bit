@@ -1,10 +1,14 @@
 {
   "name": "@nodef/extra-bit",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "license": "MIT",
   "exports": "./index.ts",
   "publish": {
-    "exclude": [".github/"]
+    "exclude": [
+      ".github/",
+      "build.ts",
+      "TODO"
+    ]
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@^1.0.19",

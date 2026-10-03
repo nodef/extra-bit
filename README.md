@@ -2,7 +2,7 @@ The [bit] is a basic unit of information in information theory, computing.<br>
 
 ▌
 📦 [JSR](https://jsr.io/@nodef/extra-bit),
-📦 [NPM](https://www.npmjs.com/package/extra-bit),
+📦 [NPM](https://www.npmjs.com/package/@nodef/extra-bit),
 📰 [Docs](https://jsr.io/@nodef/extra-bit/doc).
 
 The concept of a **bit**, which stands for *binary digit*, has been a
@@ -82,19 +82,19 @@ xbit.signExtend(15, 4);
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-bit)
 
 
-[get]: https://jsr.io/@nodef/extra-version/doc/~/get
-[getAs]: https://jsr.io/@nodef/extra-version/doc/~/getAs
-[set]: https://jsr.io/@nodef/extra-version/doc/~/set
-[setAs]: https://jsr.io/@nodef/extra-version/doc/~/setAs
-[toggle]: https://jsr.io/@nodef/extra-version/doc/~/toggle
-[toggleAs]: https://jsr.io/@nodef/extra-version/doc/~/toggleAs
-[swap]: https://jsr.io/@nodef/extra-version/doc/~/swap
-[scan]: https://jsr.io/@nodef/extra-version/doc/~/scan
-[scanReverse]: https://jsr.io/@nodef/extra-version/doc/~/scanReverse
-[count]: https://jsr.io/@nodef/extra-version/doc/~/count
-[parity]: https://jsr.io/@nodef/extra-version/doc/~/parity
-[rotate]: https://jsr.io/@nodef/extra-version/doc/~/rotate
-[reverse]: https://jsr.io/@nodef/extra-version/doc/~/reverse
-[merge]: https://jsr.io/@nodef/extra-version/doc/~/merge
-[interleave]: https://jsr.io/@nodef/extra-version/doc/~/interleave
-[signExtend]: https://jsr.io/@nodef/extra-version/doc/~/signExtend
+[get]: https://jsr.io/@nodef/extra-bit/doc/~/get
+[getAs]: https://jsr.io/@nodef/extra-bit/doc/~/getAs
+[set]: https://jsr.io/@nodef/extra-bit/doc/~/set
+[setAs]: https://jsr.io/@nodef/extra-bit/doc/~/setAs
+[toggle]: https://jsr.io/@nodef/extra-bit/doc/~/toggle
+[toggleAs]: https://jsr.io/@nodef/extra-bit/doc/~/toggleAs
+[swap]: https://jsr.io/@nodef/extra-bit/doc/~/swap
+[scan]: https://jsr.io/@nodef/extra-bit/doc/~/scan
+[scanReverse]: https://jsr.io/@nodef/extra-bit/doc/~/scanReverse
+[count]: https://jsr.io/@nodef/extra-bit/doc/~/count
+[parity]: https://jsr.io/@nodef/extra-bit/doc/~/parity
+[rotate]: https://jsr.io/@nodef/extra-bit/doc/~/rotate
+[reverse]: https://jsr.io/@nodef/extra-bit/doc/~/reverse
+[merge]: https://jsr.io/@nodef/extra-bit/doc/~/merge
+[interleave]: https://jsr.io/@nodef/extra-bit/doc/~/interleave
+[signExtend]: https://jsr.io/@nodef/extra-bit/doc/~/signExtend
