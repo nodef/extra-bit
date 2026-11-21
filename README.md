@@ -3,6 +3,7 @@ The [bit] is a basic unit of information in information theory, computing.<br>
 ▌
 📦 [JSR](https://jsr.io/@nodef/extra-bit),
 📦 [NPM](https://www.npmjs.com/package/@nodef/extra-bit),
+🌐 [Web](https://cdn.jsdelivr.net/npm/@nodef/extra-bit.web),
 📰 [Docs](https://jsr.io/@nodef/extra-bit/doc).
 
 The concept of a **bit**, which stands for *binary digit*, has been a
