@@ -56,6 +56,7 @@ Deno.test("get", () => {
   assertEquals(a, 1);  // 110,1 ⇒ 1
   a = get(6, 2);
   assertEquals(a, 1);  // 110,2 ⇒ 1
+  assertEquals(get(0xdeadbeef, 0, 32), 0xdeadbeef);
 });
 
 
@@ -80,6 +81,7 @@ Deno.test("set", () => {
   assertEquals(a, 6);  // 110,2,1 ⇒ 110
   a = set(6, 2, 0);
   assertEquals(a, 2);  // 110,2,0 ⇒ 010
+  assertEquals(set(-1, 0, 0, 32), 0x00000000);
 });
 
 
@@ -104,6 +106,7 @@ Deno.test("toggle", () => {
   assertEquals(a, 4);  // 110,1 ⇒ 100
   a = toggle(6, 2);
   assertEquals(a, 2);  // 110,2 ⇒ 010
+  assertEquals(toggle(0, 0, 32), 0xffffffff);
 });
 
 
@@ -140,6 +143,7 @@ Deno.test("scan", () => {
   assertEquals(a, 2);  // 1100 ⇒ 2
   a = scan(64);
   assertEquals(a, 6);  // 1000000 ⇒ 6
+  assertEquals(scan(0x80000000), 31);
 });
 
 
@@ -152,6 +156,7 @@ Deno.test("scanReverse", () => {
   assertEquals(a, 2);  // 101 ⇒ 2
   a = scanReverse(1);
   assertEquals(a, 0);  // 1 ⇒ 0
+  assertEquals(scanReverse(0x80000000), 31);
 });
 
 
@@ -188,6 +193,9 @@ Deno.test("rotate", () => {
   assertEquals(a, 286401057);  // 0x11122221
   a = rotate(0x11112222, -4);
   assertEquals(a, 554766882);  // 0x21111222
+  assertEquals(rotate(0x80000000,  1), 0x00000001);
+  assertEquals(rotate(0x80000001,  4), 0x00000018);
+  assertEquals(rotate(0x80000001, -4), 0x18000000);
 });
 
 

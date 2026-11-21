@@ -3,7 +3,7 @@
 
 // Get integer with 1s of specified width in bits.
 function ones(w: number) {
-  return (1<<w) - 1;
+  return w === 32? -1 : (1 << w) - 1;
 }
 
 
@@ -13,8 +13,8 @@ function ones(w: number) {
  * @param i bit index
  * @param w bit width [1]
  */
-export function get(x: number, i: number, w: number=1): number {
-  return (x>>>i) & ones(w);
+export function get(x: number, i: number, w: number = 1): number {
+  return ((x >>> i) & ones(w)) >>> 0;
 }
 
 
@@ -57,8 +57,8 @@ export function setAs(x: number, m: number, f: number=1): number {
  * @param i bit index
  * @param w bit width [1]
  */
-export function toggle(x: number, i: number, w: number=1): number {
-  return x ^ (ones(w)<<i);
+export function toggle(x: number, i: number, w: number = 1): number {
+  return (x ^ (ones(w) << i)) >>> 0;
 }
 
 
@@ -96,7 +96,7 @@ const MOD37_POS32: number[] = [
  * @param x an int32
  */
 export function scan(x: number): number {
-  return MOD37_POS32[(-x & x) % 37];
+  return MOD37_POS32[((-x & x) >>> 0) % 37];
 }
 
 
@@ -161,8 +161,8 @@ export function parity(x: number, n: number=1): number {
  * @param x an int32
  * @param n rotate amount (+ve: left, -ve: right)
  */
-export function rotate(x: number, n: number=0): number {
-  return n<0? x<<32+n | x>>>-n : x<<n | x>>32-n;
+export function rotate(x: number, n: number = 0): number {
+  return n < 0? x << (32 + n) | x >>> (-n) : x << n | x >>> (32 - n);
 }
 
 
